@@ -1,0 +1,33 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="FB_Qunit.FB_QUnit.controller.ViewCalc" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Panel headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
+					<sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout0_1542100463585">
+						<sap.ui.layout:content>
+							<sap.ui.layout:HorizontalLayout xmlns:sap.ui.layout="sap.ui.layout" id="layout0">
+								<sap.ui.layout:content>
+									
+										<Input xmlns="sap.m" value="Value" id="valueA" class="sapUiSmallMarginEnd"/>
+										<Input xmlns="sap.m" value="Value" id="valueB" class="sapUiSmallMarginEnd"/>
+										<ComboBox xmlns="sap.m" id="operation" class="sapUiSmallMarginEnd">
+											<items>
+												<core:Item xmlns:core="sap.ui.core" key="+" text="+" id="sum"/>
+												<core:Item xmlns:core="sap.ui.core" key="-" text="-" id="sub"/>
+											</items>
+										</ComboBox>
+										<Button xmlns="sap.m" text="Calculate" id="Calculate" class="sapUiSmallMarginEnd" activeIcon="sap-icon://activate" press="runCalculate"/>
+										<Input xmlns="sap.m" value="Value" id="result" class="sapUiSmallMarginEnd"/>
+									
+								</sap.ui.layout:content>
+							</sap.ui.layout:HorizontalLayout>
+							<Text xmlns="sap.m" text="Text" id="inWords"/>
+						</sap.ui.layout:content>
+					</sap.ui.layout:VerticalLayout>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
